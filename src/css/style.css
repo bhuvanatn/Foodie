@@ -1,0 +1,37 @@
+body {
+  background: #00ff99;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.textborder {
+  position: relative;
+  top: 18px;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+}
+.part:nth-child(3) {
+  position: relative;
+  top: 45px;
+}
+section {
+  background-color: black;
+  height: 550px;
+  width: 950px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+section .part {
+  position: relative;
+  top: 80px;
+  height: 275px;
+  display: flex;
+  justify-content: space-evenly;
+}
+section .part div {
+  width: 241.66666667px;
+}

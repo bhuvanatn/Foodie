@@ -1,0 +1,42 @@
+@background-color: #00ff99;
+@height: 550px;
+@width: 950px;
+
+body {
+  background: @background-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.textborder {
+  position: relative;
+  top: 18px;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+}
+.part:nth-child(3) {
+  position: relative;
+  top: 45px;
+}
+section {
+  background-color: black;
+  height: @height;
+  width: @width;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .part {
+    position: relative;
+    top: 80px;
+    height: 275px;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+      width: @width / 3 - 75px;
+    }
+  }
+}
+
