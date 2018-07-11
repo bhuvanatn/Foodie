@@ -12,13 +12,18 @@ body {
 .textborder {
   position: relative;
   top: 18px;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
   padding-bottom: 20px;
+}
+.textborder:nth-last-child(2) {
+  top: 0px;
 }
 .part:nth-child(3) {
   position: relative;
   top: 45px;
 }
+
 section {
   background-color: black;
   height: @height;
@@ -28,6 +33,7 @@ section {
   margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
+
   .part {
     position: relative;
     top: 80px;
@@ -37,6 +43,17 @@ section {
     div {
       width: @width / 3 - 75px;
     }
+    .part2 {
+      padding: 50px 10px 50px 10px;
+    }
+  }
+  .part2text {
+    text-align: justify;
+    width: @width / 3;
+  }
+  h6 {
+    text-transform: uppercase;
+    color: red;
+    margin-top: 12px;
   }
 }
-

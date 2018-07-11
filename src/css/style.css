@@ -8,8 +8,12 @@ body {
 .textborder {
   position: relative;
   top: 18px;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
   padding-bottom: 20px;
+}
+.textborder:nth-last-child(2) {
+  top: 0px;
 }
 .part:nth-child(3) {
   position: relative;
@@ -34,4 +38,16 @@ section .part {
 }
 section .part div {
   width: 241.66666667px;
+}
+section .part .part2 {
+  padding: 50px 10px 50px 10px;
+}
+section .part2text {
+  text-align: justify;
+  width: 316.66666667px;
+}
+section h6 {
+  text-transform: uppercase;
+  color: red;
+  margin-top: 12px;
 }
