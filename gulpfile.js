@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const less = require('gulp-less');
+const autoprefixer = require('gulp-autoprefixer');
+const minify = require('gulp-minify');
 
 
 gulp.task('compile-sass-bootstrap', function(){
@@ -20,14 +22,16 @@ gulp.task('move-js', function(){
 
 //less
 gulp.task('less', function(){
-    gulp.src('src/less/*.less')
+   return gulp.src('src/less/*.less')
         .pipe(less())
-        .pipe(gulp.dest('src/css'))
-        .pipe(browserSync.stream());
+        .pipe(autoprefixer())
+        .pipe(minify())
+        .pipe(gulp.dest('src/css'));
+        // .pipe(browserSync.stream());
 });
 
 //Watch and Serrve
-gulp.task('serve',['less', 'compile-sass-bootstrap','move-js'], function(){
+gulp.task('serve',['less','compile-sass-bootstrap','move-js'], function(){
    browserSync.init({
        server: './src'
    });
