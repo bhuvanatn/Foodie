@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,14 +23,20 @@
                 </h2>
             </div>
             <div class="part divCol1">
-                <div>
-                    <img src="images/red_spoon.png" alt="">
+                <div id="red_spoon">
+                    <a href="">
+                        <img src="images/red_spoon.png" alt="">
+                    </a>
                 </div>
-                <div>
-                    <img src="images/green_spoon.png" alt="">
+                <div id="green_spoon">
+                    <a href="">
+                        <img src="images/green_spoon.png" alt=""> 
+                    </a>
                 </div>
-                <div>
-                    <img src="images/white_spoon.png" alt="">
+                <div id="white_spoon">
+                    <a href="">
+                        <img src="images/white_spoon.png" alt=""> 
+                    </a>
                 </div>
             </div>
             <div class="part divCol1">
@@ -48,30 +55,39 @@
 
             <div class="part part2">
                 <div>
-                    <img src="images/shapes1.png" alt="">
+                    <a href="" class="pop">
+                        <img src="images/shapes1.png" alt="">
+                    </a>
                 </div>
                 <div>
                     <div>
-                        <img src="images/shapes2.png" alt="">
+                        <a href="" class="pop">
+                            <img src="images/shapes2.png" alt="">
+                        </a>
                     </div>
                     <div style="height:10px;"></div>
                     <div>
-                        <img src="images/shapes3.png" alt="">
+                        <a href="" class="pop">
+                            <img src="images/shapes3.png" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="divCol2"> 
+                <div class="divCol2">
                     <div class="textborder">
                         <h4>Taste: a five-sense Experience</h4>
                     </div>
                     <div style="margin-top: 16px;">
                         <div>
                             Our visual senses provide uo to 28% of our taste experience. This is a theory Instagram Chef Jacques la Merde takes to the
-                            extreme. Serving up exquisite tasting plates <br>- in fact made from gas station ingredients 
-                            <br>-to her thousands of followerrs, she demonstrates how visual techniques affect our perrceptions of
-                            food.
+                            extreme. Serving up exquisite tasting plates
+                            <br>- in fact made from gas station ingredients
+                            <br>-to her thousands of followerrs, she demonstrates how visual techniques affect our perrceptions
+                            of food.
                         </div>
                         <div>
-                            <h6> <b>Food that looks its best</b></h6>
+                            <h6>
+                                <b>Food that looks its best</b>
+                            </h6>
                             <b>Enhance the flavour of your food by using a varity of colours and shapes to entice the eyes.</b>
                         </div>
                     </div>
@@ -79,6 +95,25 @@
             </div>
 
         </section>
+    </div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

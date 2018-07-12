@@ -31,7 +31,8 @@ gulp.task('serve',['less', 'compile-sass-bootstrap','move-js'], function(){
    browserSync.init({
        server: './src'
    });
-
+   
+   gulp.watch(['src/js/main.js']);
    gulp.watch(['src/less/*.less'], ['less']);
    gulp.watch('src/*.html').on('change', browserSync.reload);
 });
