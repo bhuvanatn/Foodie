@@ -36,17 +36,17 @@ section .part {
   display: flex;
   justify-content: space-evenly;
 }
-section .part div {
+section .part .divCol1 {
   width: 241.66666667px;
 }
 section .part .part2 {
   padding: 50px 10px 50px 10px;
 }
-section .part2text {
+section .part .divCol2 {
   text-align: justify;
   width: 316.66666667px;
 }
-section h6 {
+section .part h6 {
   text-transform: uppercase;
   color: red;
   margin-top: 12px;
