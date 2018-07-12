@@ -33,8 +33,12 @@ section .part {
   position: relative;
   top: 80px;
   height: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 section .part .divCol1 {
   width: 241.66666667px;
