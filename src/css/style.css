@@ -5,6 +5,17 @@ body {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.box {
+  flex-basis: 30%;
+  justify-content: space-between;
+}
 .textborder {
   position: relative;
   top: 18px;
@@ -15,42 +26,14 @@ body {
 .textborder:nth-last-child(2) {
   top: 0px;
 }
-.part:nth-child(3) {
-  position: relative;
-  top: 45px;
-}
 section {
-  background-color: black;
-  height: 550px;
   width: 950px;
+  background-color: black;
   color: white;
   text-align: center;
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
-section .part {
-  position: relative;
-  top: 80px;
-  height: 275px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-section .part .divCol1 {
-  width: 241.66666667px;
-}
-section .part .part2 {
-  padding: 50px 10px 50px 10px;
-}
-section .part .divCol2 {
-  text-align: justify;
-  width: 316.66666667px;
-}
-section .part h6 {
+h6 {
   text-transform: uppercase;
   color: red;
   margin-top: 12px;

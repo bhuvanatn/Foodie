@@ -25,9 +25,9 @@ gulp.task('less', function(){
    return gulp.src('src/less/*.less')
         .pipe(less())
         // .pipe(autoprefixer('last 3 versions'))
-        .pipe(autoprefixer({
-            browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
-        }))
+        // .pipe(autoprefixer({
+            // browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+        // }))
         .pipe(minify())
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
